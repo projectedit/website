@@ -1,0 +1,159 @@
+.bottom {
+    background: var(--dark);
+    padding: 20px;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--primary);
+}
+
+.links {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.linker {
+    margin-right: 10%;
+}
+
+.footer-heading {
+    color: var(--primary);
+}
+
+.footer-link{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.footer-link a {
+    color: var(--lite);
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    color: var(--primary)
+}
+
+.subscribe {
+    display: inline-flex;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+mat-icon {
+    color: var(--primary);
+    background: none;
+}
+
+button {
+    background: none;
+    border: none;
+    border-left: 1px solid var(--primary);
+}
+
+input::placeholder{
+    color: white;
+}
+
+input {
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+
+.list-icons{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list-icons a{
+    padding: 10px;
+    color: var(--primary);
+}
+
+.copyrights {
+    text-align: center;
+}
+
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* For small View */
+@media screen and (min-width: 380px)
+and (max-width: 768px) {
+    .links {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .links {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+  
