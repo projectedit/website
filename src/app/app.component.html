@@ -1,0 +1,21 @@
+<div class="app-container">
+  <div class="top">
+    <span>LOGO</span>
+    <span class="space"></span>
+    <app-navigation></app-navigation>
+    <button (click)="hide = !hide" (click)="drawer.toggle()">
+      <mat-icon>{{hide ? 'menu' : 'close'}}</mat-icon>
+    </button>
+  </div>
+  <mat-drawer-container hasBackdrop="false">
+    <mat-drawer #drawer mode="over">
+      <app-navigation></app-navigation>
+    </mat-drawer>
+    <mat-drawer-content>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+      <app-footer></app-footer>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

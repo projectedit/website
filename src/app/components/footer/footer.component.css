@@ -1,159 +1,182 @@
-.bottom {
-    background: var(--dark);
-    padding: 20px;
+/***************************
+               FOOTER
+****************************/
+footer{
+    background:var(--blendering);
+    color:var(--lite);
+    margin-top:15rem;
+    position:relative;
 }
 
-h1{
-    color: white;
+.footer_body{  
+    padding-top:3rem;
 }
 
-p{
-    color: white;
+.footer_body .flex_content:first-child{
+    width:180%;
 }
 
-.footer {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    border-bottom: 1px solid var(--primary);
+footer h3{
+    color:var(--primary);;
+    margin-bottom:1.5rem;
 }
 
-.links {
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
+footer .logo{
+    color:var(--white);
 }
 
-.linker {
-    margin-right: 10%;
+footer .logo img{
+    width:50px;
 }
 
-.footer-heading {
-    color: var(--primary);
+footer .logo figcaption strong{
+    margin-bottom:3px;
 }
 
-.footer-link{
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.footer-link a {
-    color: var(--lite);
+footer a{
+    color:var(--lite);
+    display:block;
+    margin:10px 0;
     text-decoration: none;
 }
 
-.footer-link a:hover {
-    color: var(--primary)
+footer a:hover{
+    color:var(--primary);
 }
 
-.subscribe {
-    display: inline-flex;
-    border-radius: 5px;
-    border: 1px solid var(--primary);
+footer fieldset{
+    padding:0;
 }
 
-mat-icon {
-    color: var(--primary);
-    background: none;
+footer fieldset input{
+    background: var(--secondary);
+    border:0;
+    color:var(--lite);
+    padding:1rem;
 }
 
-button {
-    background: none;
-    border: none;
-    border-left: 1px solid var(--primary);
+footer fieldset .btn{
+    border-radius:0;
+    border:0;
+    background: var(--breaker);
 }
 
-input::placeholder{
-    color: white;
+footer .flex_content:nth-child(2) a:before, footer .flex_content:nth-child(3) a:before{
+    content:"\f0da";
+    font-family:"FontAwesome";
+    margin-right:10px;
 }
 
-input {
-    color: white;
-    background: none;
-    outline: none;
-    border: none;
+footer .flex_content:nth-child(2) a:hover, footer .flex_content:nth-child(3) a:hover{
+    margin-left:5px;
 }
 
-
-
-.list-icons{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
+footer .flex:last-child{
+    align-items:center;
 }
 
-.list-icons a{
-    padding: 10px;
-    color: var(--primary);
+footer .flex:last-child .flex-content:last-child{
+    text-align:right;
 }
 
-.copyrights {
-    text-align: center;
+footer .flex:last-child p{
+    color:var(--white);
 }
 
-
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-
+footer .flex:last-child a{
+    width:40px;
+    display:inline-block;
+    background-color:var(--secondary);
+    color:var(--white);
+    padding:0.5rem;
+    margin-right:3px;
+    text-align:center;
 }
 
-/* For small View */
-@media screen and (min-width: 380px)
-and (max-width: 768px) {
-    .links {
-        flex-direction: column;
+footer .flex:last-child a:hover{
+    background:var(--breaker);
+    color:var(--gray);
+}
+
+.top_footer{
+    width:90%;
+    position:absolute;
+    left:50%;
+    top:-25%;
+    transform:translate(-50%, -25%);
+    border-radius:10px;
+    background:var(--primary);
+    color:var(--white);
+    overflow:hidden;
+    box-shadow:0px 6px 16px -6px var(--gray);
+}
+
+.top_footer figure{
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    transform:translate(-50%, 0);
+    overflow:hidden;
+    z-index:11;
+}
+
+.top_footer .flex_content:first-child:after{
+    content:"";
+    background: var(--secondary);
+    width:80%;
+    height:95%;
+    border-radius:0 0 50% 50%;
+    z-index:1;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%, 0);
+}
+
+.top_footer .flex_content:first-child{
+    width:25%;
+}
+
+.top_footer figure img{
+    width:100%;
+    z-index:11;
+    position:relative;
+}
+
+@media (max-width:1100px){
+    footer .flex:first-child{
+        flex-wrap:wrap;
+    }
+    
+    footer .flex:first-child .flex-content{
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width:920px){
+    footer{
+        margin-top:5rem;
+        padding:0 !important;
+    }
+    
+    .top_footer{
+        width:100%;
+        position:static;
+        transform:none;
+        border-radius:0;  
+        box-shadow:0;
+    }
+    
+    .top_footer .flex_content:first-child{
+        display:none;
     }
 
-    .footer {
-        flex-direction: column;
+    footer .flex:last-child .flex-content:last-child{
+        text-align:left;
     }
 }
- 
-/* For Tablet View */
-@media screen and (min-device-width: 768px)
-and (max-device-width: 1024px) {
 
-}
- 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {
-    .links {
-        flex-direction: column;
-    }
-
-    .footer {
-        flex-direction: column;
+@media (max-width:320px){
+    footer .flex:first-child .flex-content{
+        flex:1 1 100%;
     }
 }
- 
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px)
-and (orientation: landscape) {
-
-}
- 
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-
-}
- 
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
- 
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
- 
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px)
-and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-  
