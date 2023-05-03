@@ -1,153 +1,92 @@
 /*HEADER*/
-
-main {
+.header {
+    position: absolute;
     overflow: hidden;
     width: 100%;
     height: calc(100vh - 60px);
     background: linear-gradient(to right, rgba(1, 1, 1, 0.9) 10%, rgba(1, 1, 1, 0.5) 50%, rgba(1, 1, 1, 0.1) 100%), url("../../../assets/header_img/futuristic-smart-city-with-5g-global-network-technology.jpg");
     background-size: cover;
     background-position: left;
-    align-items: center;
-    justify-content: left;
-    color: var(--white);
-    position: relative;
+    z-index: -100;
 }
 
-.section {
-    margin: 0 auto;
-}
-
-.container {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-}
-
-.heading-xl {
-    font-family: inherit;
-    font-size: clamp(2.3rem, 4vw, 4.241rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -1px;
-    color: var(--lite);
-}
-
-.xl {
-    font-family: inherit;
-    font-size: clamp(1.5rem, 4vw, 1.241rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -1px;
-    color: var(--lite);
-}
-
-.paragraph {
-    color: var(--lite);
-}
-
-.btn {
-    border: none;
-    border-radius: 10px;
-    padding: 8px;
+.spla {
     width: 100%;
-    background: var(--primary);
-}
-
-.banner-column {
-    position: relative;
-    display: grid;
-    align-items: center;
-    row-gap: 3rem;
-}
-
-@media only screen and (min-width: 48rem) {
-    .banner-column {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 64rem) {
-    .banner-column {
-        grid-template-columns: 1fr max-content;
-        column-gap: 4rem;
-        margin-top: 3rem;
-    }
-}
-
-.banner-image {
-    display: block;
-    max-width: 18rem;
-    height: auto;
-    margin-top: 2rem;
-    object-fit: cover;
-    justify-self: center;
-}
-
-@media only screen and (min-width: 48rem) {
-    .banner-image {
-        order: 1;
-        max-width: 20rem;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width: 64rem) {
-    .banner-image {
-        max-width: 25rem;
-        height: auto;
-        margin-right: 5rem;
-    }
-}
-
-.banner-inner {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 1.75rem;
+    border: 1px solid var(--primary);
 }
 
-.banner-links {
-    position: absolute;
-    top: 30%;
-    right: 1.5rem;
-    display: grid;
-    justify-items: center;
-    row-gap: 0.5rem;
-    opacity: 0;
-    visibility: hidden;
+.img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 150px);
     color: var(--lite);
 }
 
-@media only screen and (min-width: 64rem) {
-    .banner-links {
-        opacity: 1;
-        visibility: visible;
+.img h1 {
+    width: 50%;
+    margin: 30px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.img a {
+    width: 50%;
+    margin: 30px;
+    padding: 10px;
+    border: solid 3px var(--lite);
+    border-radius: 20px;
+    color: var(--lite);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+}
+
+@media (max-width:920px) {
+    
+    .img h1 {
+        width: 70%;
     }
 }
 
-.banner-links>* {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    color: var(--color-white-100);
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    text-align: center;
 }
 
-.banner-links::before {
-    position: absolute;
-    content: "";
-    top: -3rem;
-    width: 4rem;
-    height: 1.5px;
-    transform: rotate(90deg);
-    background: var(--color-white-100);
+.padding_1{
+    padding: 0 20px;
 }
 
-.banner-links::after {
-    position: absolute;
-    content: "";
-    bottom: -3rem;
-    width: 4rem;
-    height: 2px;
-    transform: rotate(90deg);
-    background: var(--color-white-100);
+
+.one {
+    background: var(--blendering);
+    width: 100%;
+    color: var(--lite);
+    padding: 10px;
+}
+
+.twe {
+    background: var(--breaker);
+    width: 100%;
+    color: var(--dark);
+    padding: 10px;
+}
+
+.three {
+    background: var(--secondary);
+    width: 100%;
+    color: var(--dark);
+    padding: 10px;
 }

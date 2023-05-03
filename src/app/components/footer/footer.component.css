@@ -2,7 +2,7 @@
                FOOTER
 ****************************/
 footer{
-    background:var(--blendering);
+    background:var(--dark);
     color:var(--lite);
     margin-top:15rem;
     position:relative;

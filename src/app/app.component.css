@@ -7,7 +7,7 @@
     height: 60px;
     padding: 0 20px;
     top: 0;
-    background: var(--blendering);
+    background: var(--dark);
 }
 
 mat-drawer-container {
