@@ -11,7 +11,10 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CardsComponent } from './components/cards/cards.component'
+import { CardsComponent } from './components/cards/cards.component';
+import { SolutionsComponent } from './pages/solutions/solutions.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CardsComponent } from './components/cards/cards.component'
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    CardsComponent
+    CardsComponent,
+    SolutionsComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
