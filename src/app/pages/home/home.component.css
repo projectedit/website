@@ -1,6 +1,12 @@
-.in h3 {
-    padding: 10px 50px;
+.in h2 {
+    padding: 0 50px;
     font-weight: 500;
+    font-size: 20px;
+}
+
+.in p {
+    padding: 0 50px;
+    font-weight: 400;
 }
 
 a {
@@ -58,12 +64,8 @@ p {
 
 .fl {
     box-shadow: 0px 0px 20px 0px var(--secondary);
-    margin: 10px 10px;
     width: 100%;
-    color: var(--late);
-    padding: 10px;
 }
-
 
 .git {
     width: 100%;
@@ -77,50 +79,7 @@ p {
 
 
 .fle{
-    border-radius: 100px;
-    width: 5%;
-    height: 300px;
-}
-
-.fle:hover{
-    width: 100%;
-}
-
-.fle:hover p{
-    display: block;
-}
-
-.fle:hover h1 {
-    transform: rotate(0deg);
-    display: block;
-}
-
-.one {
-    background: red;
-}
-
-.twe {
-    background: rgb(50, 1, 1);
-    border-left: 5px solid white;
-}
-
-.three {
-    background: rgb(7, 53, 0);
-    border-left: 5px solid white;
-}
-
-.four {
-    background: rgb(199, 209, 9);
-    border-left: 5px solid white;
-}
-
-.fle p{
-    display: none;
-}
-
-.fle h1 {
-    transform: rotate(90deg);
-    display: block;
+    border-bottom: solid 3px var(--breaker);
 }
 
 
@@ -139,5 +98,96 @@ p {
     }
 }
 
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.padding_1x{
+    padding:1rem;
+}
+
+.padding_2x{
+    padding:2rem;
+}
+
+.padding_3x{
+    padding:3rem;
+}
+
+.padding_4x{
+    padding:4rem;
+}
+
+.medium{
+    font-size:2em;
+}
+
+@media (max-width:920px){
+    .flex{
+        flex-wrap:wrap;
+    }
+    
+    .padding_1x, .padding_2x, .padding_3x, .padding_4x{
+        padding:1rem;
+    }
+    
+    .title_header{
+        width:100%;
+    }
+}
 
 
+/*division_2*/
+.division_2{
+    align-items:center;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding:0 4rem;
+}
+
+.division_2 .title_header{
+    width:100%;
+    text-align:left;
+}
+
+.division_2 .flex_content:first-child{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.division_2 .flex_content:last-child{
+    background:var(--secondary);
+}
+
+
+.division_2 #notification article .title{
+    margin:0;
+    position:relative;
+    top:10px;
+    font-size:0.9rem;
+}
+
+@media (max-width:920px){
+    .division_2{
+        margin-top:0rem;
+        display:block;
+        padding:1rem;
+    }
+}
+
+
+.bar_blue, .bar_white{  
+    display:block;
+    width:200px;
+    height:3px;
+    margin: 50px 0;
+}
+
+.bar_blue{
+    background:var(--primary);
+}
+
+.bar_white{
+    background:var(--breaker);
+}

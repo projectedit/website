@@ -1,0 +1,55 @@
+.center2 {
+    display: inline-flex;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.fle{
+    width: 15%;
+    height: 300px;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.one {
+    background: red;
+}
+
+.twe {
+    background: green;
+}
+
+.three {
+    background: yellow;
+}
+
+.four {
+    background: blue;
+}
+
+.fle h2{
+    display: inline-flex;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+.fle p{
+    display: none;
+}
+
+.fle:hover{
+    width: 100%;
+}
+
+.fle:hover h2{
+    transform: rotate(0);
+}
+
+.fle:hover p{
+    display: inline-block;
+}

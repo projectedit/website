@@ -14,7 +14,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { SolutionsComponent } from './pages/solutions/solutions.component';
 import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component'
+import { ContactComponent } from './pages/contact/contact.component';
+import { FluzzlyComponent } from './components/fluzzly/fluzzly.component';
+import { BtnComponent } from './components/btn/btn.component';
+import { LinkbtnComponent } from './components/linkbtn/linkbtn.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ContactComponent } from './pages/contact/contact.component'
     CardsComponent,
     SolutionsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FluzzlyComponent,
+    BtnComponent,
+    LinkbtnComponent
   ],
   imports: [
     BrowserModule,

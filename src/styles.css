@@ -141,3 +141,18 @@ select {
 
 /* For iPhone 6 and 6 plus Portrait or Landscape View */
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+.bar_blue, .bar_white{  
+    display:block;
+    width:200px;
+    height:3px;
+    margin: 50px 0;
+}
+
+.bar_blue{
+    background:var(--primary);
+}
+
+.bar_white{
+    background:var(--breaker);
+}

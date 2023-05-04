@@ -180,3 +180,7 @@ footer .flex:last-child a:hover{
         flex:1 1 100%;
     }
 }
+
+fieldset{
+    border: none;
+}
