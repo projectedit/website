@@ -47,7 +47,7 @@
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (max-width:920px) {
@@ -88,5 +88,15 @@ p{
     background: var(--secondary);
     width: 100%;
     color: var(--dark);
-    padding: 10px;
+    padding: 15px;
+}
+
+.exp {
+    border-radius: 10px;
+    padding: 5px 20px;
+    background: var(--lite);
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 500;
+    color: var(--dark);
 }

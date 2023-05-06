@@ -2,6 +2,8 @@
 a{
     text-decoration: none;
     color: var(--lite);
+    font-weight: 500;
+    font-size: 20px;
 }
 
 a:hover {
@@ -9,7 +11,7 @@ a:hover {
 }
 
 li{
-    margin: 20px;
+    margin: 20px 0;
     list-style: none;
     color: var(--lite);
 }

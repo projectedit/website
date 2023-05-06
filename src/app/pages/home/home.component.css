@@ -1,7 +1,7 @@
 .in h2 {
-    padding: 0 50px;
-    font-weight: 500;
-    font-size: 20px;
+    padding: 50px 150px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .in p {
@@ -65,6 +65,24 @@ p {
 .fl {
     box-shadow: 0px 0px 20px 0px var(--secondary);
     width: 100%;
+    padding: 20px;
+    margin: 30px 20px;
+}
+
+.fl a {
+    text-align: center;
+    background: var(--secondary);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.m a {
+    text-align: center;
+    background: var(--secondary);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 .git {
@@ -77,9 +95,37 @@ p {
     align-items: center;
 }
 
+.git h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.git a {
+    background: var(--primary);
+    border-radius: 5px;
+    font-weight: 900;
+    padding: 5px 20px;
+}
 
 .fle{
     border-bottom: solid 3px var(--breaker);
+    text-align: center;
+}
+
+.fle a {
+    text-align: center;
+    background: var(--breaker);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.e a {
+    text-align: center;
+    background: var(--breaker);
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 
@@ -94,7 +140,7 @@ p {
         margin: 10px 0px;
         width: 100%;
         color: var(--late);
-        padding: 10px;
+        padding: 30px 10px;
     }
 }
 
@@ -136,6 +182,12 @@ p {
     .title_header{
         width:100%;
     }
+
+    .in h2 {
+        padding: 50px 50px;
+        font-weight: 900;
+        text-align: center;
+    }
 }
 
 
@@ -153,7 +205,7 @@ p {
 }
 
 .division_2 .flex_content:first-child{
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .division_2 .flex_content:last-child{
