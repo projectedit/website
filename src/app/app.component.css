@@ -8,10 +8,18 @@
     padding: 0 20px;
     top: 0;
     background: var(--dark);
+    z-index: 999;
+}
+
+.logo {
+    position: absolute;
+    color: white;
+    text-align: center;
 }
 
 mat-drawer-container {
     height: calc(100% - 60px);
+    background-color: var(--main--bg-color);
 }
 
 mat-drawer{
@@ -30,6 +38,8 @@ mat-drawer app-navigation {
 
 button {
     display: block;
+    position: absolute;
+    left: 20px;
 }
 
 
@@ -38,6 +48,12 @@ button {
 @media screen and (min-width: 1024px) {
     .top app-navigation {
         display: block;
+    }
+
+    .logo {
+        position: absolute;
+        left: 20px;
+        color: white;
     }
 
     mat-drawer app-navigation {
@@ -52,6 +68,8 @@ button {
 
     button {
         display: none;
+        position: absolute;
+        right: 1220px;
     }
 }
 

@@ -11,13 +11,6 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CardsComponent } from './components/cards/cards.component';
-import { SolutionsComponent } from './pages/solutions/solutions.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { FluzzlyComponent } from './components/fluzzly/fluzzly.component';
-import { BtnComponent } from './components/btn/btn.component';
-import { LinkbtnComponent } from './components/linkbtn/linkbtn.component'
 
 @NgModule({
   declarations: [
@@ -26,13 +19,6 @@ import { LinkbtnComponent } from './components/linkbtn/linkbtn.component'
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    CardsComponent,
-    SolutionsComponent,
-    AboutComponent,
-    ContactComponent,
-    FluzzlyComponent,
-    BtnComponent,
-    LinkbtnComponent
   ],
   imports: [
     BrowserModule,
