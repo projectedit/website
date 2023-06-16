@@ -18,12 +18,12 @@
 }
 
 mat-drawer-container {
-    height: calc(100% - 60px);
+    height: calc(100vh - 60px);
     background-color: var(--main--bg-color);
 }
 
 mat-drawer{
-    background: var(--blendering);
+    background: var(--dark);
     width: 100%;
     display: block;
 }

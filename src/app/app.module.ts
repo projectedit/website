@@ -11,6 +11,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { SolutionsComponent } from './pages/solutions/solutions.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
+    ContactComponent,
+    SolutionsComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

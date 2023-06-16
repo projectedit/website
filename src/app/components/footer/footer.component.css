@@ -39,8 +39,9 @@ footer a{
 }
 
 footer a:hover{
-    color:var(--white);
+    color:var(--primary);
 }
+
 
 footer fieldset{
     padding:0;
@@ -59,7 +60,9 @@ footer fieldset .btn{
 }
 
 footer fieldset .btn_2{
-    background-color:var(--primary_lite);
+    background-color:var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
     }
 
 footer fieldset .btn_2:hover{
@@ -93,7 +96,7 @@ footer .flex:last-child p{
 footer .flex:last-child a{
     width:40px;
     display:inline-block;
-    background-color:#334f6c;
+    background-color:var(--primary);
     color:var(--white);
     padding:0.5rem;
     margin-right:3px;
@@ -101,7 +104,7 @@ footer .flex:last-child a{
 }
 
 footer .flex:last-child a:hover{
-    background-color:var(--primary_lite);
+    background-color:var(--dark);
     color:var(--gray);
 }
 

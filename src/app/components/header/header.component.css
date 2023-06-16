@@ -11,7 +11,9 @@ header {
 }
 
 p{
-    color: white;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 header article {
@@ -75,6 +77,7 @@ header section aside:nth-child(3) {
     font-weight: 600;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 @media (max-width:920px) {
