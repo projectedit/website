@@ -28,7 +28,7 @@ header article .title {
 }
 
 .aboutus-section {
-  padding: 50px 20px;
+  padding: 0px 20px;
   max-width: 1020px;
 }
 
@@ -142,7 +142,7 @@ a:active {
 
 
 .wrapper {
-  background: linear-gradient(30deg, #151515 10%, #0e1822);
+  background: linear-gradient(30deg, var(--dark) 10%, var(--dark));
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -187,7 +187,7 @@ a:active {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #f27121, #000000 40%);
+  background: linear-gradient(135deg, var(--primary), #ffffff00 40%);
   z-index: -2;
 }
 
@@ -199,7 +199,7 @@ a:active {
   width: calc(100% - 1px);
   height: calc(100% - 1px);
   border-radius: 1rem;
-  background: linear-gradient(90deg, #171721, #060609);
+  background: rgba(255, 255, 255, 0.1);
   transition: box-shadow 0.3s ease;
   z-index: -1;
 }
@@ -342,7 +342,6 @@ a:active {
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
-  padding: 50px 0;
 }
 
 .inner-container {
@@ -350,6 +349,7 @@ a:active {
   float: right;
   background-color: #fdfdfd;
   padding: 50px;
+  padding-bottom: 0;
   max-width: 1020px;
 }
 
@@ -361,7 +361,7 @@ a:active {
 
 .text {
   font-size: 1rem;
-  color: #545454;
+  color: #000000;
   line-height: 30px;
   text-align: justify;
   margin-bottom: 40px;
@@ -374,16 +374,20 @@ a:active {
   font-size: 13px;
 }
 
+.ttt{
+  color: white;
+}
+
 @media screen and (max-width:1200px) {
   .inner-container {
-    padding: 80px;
+
   }
 }
 
 @media screen and (max-width:1000px) {
   .about-section {
     background-size: 100%;
-    padding: 100px 40px;
+    padding: 0px 40px;
   }
 
   .inner-container {
@@ -399,6 +403,10 @@ a:active {
   .inner-container {
     padding: 60px;
   }
+}
+
+.page-section{
+  background: linear-gradient(350deg, var(--dark) 20%, rgba(1, 1, 1, 0.01) 40%, rgba(255, 255, 255, 0.01) 100%);
 }
 
 
@@ -417,19 +425,33 @@ a:active {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: var(--primary);
+}
+
+.text-center h1 {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .timeline>li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .timeline>li:after,
 .timeline>li:before {
   display: table;
   content: " ";
+}
+
+.text-muted_{
+  color: white;
+}
+
+.timeline-heading_{
+  color: white;
 }
 
 .timeline>li:after {
@@ -467,9 +489,9 @@ a:active {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid var(--primary);
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: var(--primary);
 }
 
 .timeline>li .timeline-image h4,
@@ -524,11 +546,6 @@ a:active {
     left: 50%;
   }
 
-  .timeline>li {
-    min-height: 100px;
-    margin-bottom: 100px;
-  }
-
   .timeline>li .timeline-panel {
     float: left;
     width: 41%;
@@ -538,9 +555,9 @@ a:active {
 
   .timeline>li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
+    width: 75px;
+    height: 75px;
+    margin-left: -35px;
   }
 
   .timeline>li .timeline-image h4,
@@ -567,9 +584,9 @@ a:active {
   }
 
   .timeline>li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
+    width: 75px;
+    height: 75px;
+    margin-left: -35px;
   }
 
   .timeline>li .timeline-image h4,
@@ -594,9 +611,9 @@ a:active {
   }
 
   .timeline>li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
   }
 
   .timeline>li .timeline-image h4,
@@ -610,7 +627,8 @@ a:active {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
+  background-color: white;
 }
 
 .page-section h2.section-heading,
@@ -631,7 +649,7 @@ a:active {
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -661,7 +679,7 @@ a:active {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #000000 !important;
 }
 
 p {
@@ -683,4 +701,31 @@ p {
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+
+.join {
+  background: var(--primary);
+  width: 100%;
+  color: white;
+}
+
+._btn__{
+  border: 0.2rem solid var(--dark);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--dark);
+  font-weight: 900;
+}
+
+._btn__:hover{
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
+
+.kkk{
+  max-width: 500px;
 }
