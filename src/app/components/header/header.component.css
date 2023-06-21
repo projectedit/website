@@ -1,7 +1,7 @@
 /*HEADER*/
 header {
     width: 100%;
-    background: linear-gradient(150deg, #000532 25%, rgba(1, 1, 1, 0.5) 50%, rgba(1, 1, 1, 0.1) 100%), url("../../../assets/img/header.jpg");
+    background: linear-gradient(150deg, rgba(24, 58, 29) 30%, rgba(240, 160, 75, 0.5) 50%, rgba(1, 1, 1, 0.1) 100%), url("../../../assets/img/header.jpg");
     background-size: cover;
     background-position: left;
     align-items: center;
@@ -11,14 +11,24 @@ header {
 }
 
 p{
-    color: var(--dark);
-    font-weight: 600;
-    font-size: 1rem;
+    color: white;
+}
+
+em{
+    color: var(--secondary);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.flex{
+    display: flex;
 }
 
 header article {
     width: 50%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +69,7 @@ header section aside a {
 }
 
 header section aside:nth-child(1) {
-    background-color: var(--primary);
+    background-color: var(--secondary);
 }
 
 header section aside:nth-child(2) {
@@ -67,17 +77,19 @@ header section aside:nth-child(2) {
 }
 
 header section aside:nth-child(3) {
-    background-color: var(--blendering);
+    background-color: var(--secondary);
 }
 
 .btn_3 {
-    background: linear-gradient( 90deg, var(--primary), var(--blendering));
+    background: var(--secondary);
     color: white;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 @media (max-width:920px) {
@@ -154,7 +166,11 @@ header section aside:nth-child(3) {
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    h1{
+        font-size: 2.3rem;
+    }
+}
 
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {}
@@ -170,4 +186,3 @@ header section aside:nth-child(3) {
 
 /* For iPhone 6 and 6 plus Portrait or Landscape View */
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
-

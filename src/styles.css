@@ -1,265 +1,37 @@
 :root {
-    --main-bg-color: #00000011;
-    --dark: #000532;
-    --lite: #eae1e1;
-    --primary: #e10600;
-    --secondary: #a5e41c;
-    --breaker: #434db0;
-    --blendering: #34bbda;
-    --dark-lite: #e4e4e4;
-    --default_font:'Mukta', sans-serif;
-    --title_font:'Kanit', sans-serif;
+    --main: rgb(24, 58, 29);
+    --black: rgb(0,0,0);
+    --white: rgb(255, 255, 255);
+    --liter: rgb(225, 238, 221);
+    --lite:rgb(254, 251, 233);
+    --primary: rgb(24, 58, 29);
+    --secondary: rgb(240, 160, 75);
+    --default_font:Roboto, "Helvetica Neue", sans-serif;
 }
 
-/***************************
-    CUSTOM SCROLL BAR
-****************************/
-*, html{
-    scroll-behavior: smooth;
+html,
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--liter);
 }
 
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
     box-sizing: border-box;
-}
-
-::-webkit-scrollbar {
-    height: 12px;
-    width: 8px;
-    background: var(--dark);
-}
-
-::-webkit-scrollbar-thumb {
-    background: gray;
-    -webkit-box-shadow: 0px 1px 2px var(--dark);
-}
-
-::-webkit-scrollbar-corner {
-    background: var(--dark);
-}
-
-
-
-
-
-/***************************
-            DEFAULT
-****************************/
-body{
-    margin:0;
-    overflow-x:hidden !important;
-    font-family: var(--default_font);
-    background-color: var(--dark-lite);
+    margin: 0;
+    padding: 0;
 }
 
 a{
-    text-decoration:none !important;
-    min-width: fit-content;
-    width: fit-content;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-}
-
-a, button{
-    transition:0.5s;
-}
-
-em{
-    font-style:normal;
-    color:var(--blendering);
-}
-
-ul{
-    padding:0;
-}
-
-figure{
-    padding:0;
-    margin:0;
-}
-
-a, p, .btn{
-    font-size:18px;
-}
-
-p{
-    line-height:1.5em;
-    font-weight: 500;
-}
-
-a, button, input, textarea, select{
-    outline:none !important;
-}
-
-fieldset{
-    border:0;
-}
-
-h1, h2, h3, h4, h5, h6{
-    margin:0;
-}
-
-.title, .sub_title{
-    font-family:var(--title_font);
-    font-weight:900;
-    margin:0;
     color: white;
+    text-decoration: none;
 }
-
-.flex, .fixed_flex{
-    display:flex;
-}
-
-.flex_content{
-    width:100%;
-    position:relative;
-}
-
-.padding_1x{
-    padding:1rem;
-}
-
-.padding_2x{
-    padding:2rem;
-}
-
-.padding_3x{
-    padding:3rem;
-}
-
-.padding_4x{
-    padding:4rem;
-}
-
-.big{
-    font-size:3.5em;
-}
-
-.medium{
-    font-size:2em;
-}
-
-.small{
-    font-size:1.1em;
-}
-
-.btn_1{
-    background:var(--primary_lite);
-    color:var(--dark) !important;
-}
-
-.btn_1:hover{
-    opacity:0.8;
-}
-
-.btn_2{
-    background-color:#fdc632;
-    color:var(--dark) !important;
-}
-
-.btn_2:hover{
-    opacity:0.8;
-    color:var(--dark);
-}
-
-
-
-.btn_3:after{
-    content:"\f178";
-    font-family:"FontAwesome";
-    margin-left:5px;
-}
-
-.btn_3:hover:before{
-    border-radius:40px;
-    width:100%;
-}
-
-.padding_top_1x {
-    margin-top: 7rem;
-}
-
-.ff {
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-}
-
-.divisions{
-    position:relative;
-}
-
-.title_header{
-    margin:auto;
-    text-align:center;
-    width:60%;
-}
-
-.ball:before{
-    content:"";
-    border-radius:50%;
-    background-color:rgba(1,1,1,0.2);
-    position:absolute;
-    left:0;
-    top:50%;
-    width:30px;
-    height:30px;  
-    transform:translate(-50%, -50%);
-}
-
-.link-tag{
-    position:relative;
-    color:var(--black);
-}
-
-.link-tag:before{
-    content:"\f0da";
-    font-family:"FontAwesome";
-    margin-right:5px;
-    transition:0.5s;
-    color:var(--primary);
-}
-
-.link-tag:hover:before{
-    margin-right:10px;
-    color:var(--black);
-}
-
-.link-tag:hover{
-    color:var(--primary);
-}
-
-@media (max-width:920px){
-    .flex{
-        flex-wrap:wrap;
-    }
-    
-    .padding_1x, .padding_2x, .padding_3x, .padding_4x{
-        padding:1rem;
-    }
-    
-    .big{
-        font-size:1.8em;
-    }
-    
-    .medium{
-        font-size:1.6em;
-    }
-    
-    .small{
-        font-size:1.1em;
-    }
-    
-    .btn{
-        padding:0.5rem 1rem;
-    }
-    
-    .title_header{
-        width:100%;
-    }
-}
-
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {}

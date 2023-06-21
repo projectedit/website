@@ -1,77 +1,107 @@
-.top {
-    position: sticky;
+.app-container {
+    background: var(--lite);
+}
+
+mat-toolbar {
+    background-color: var(--primary);
     position: -webkit-sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    padding: 0 20px;
+    position: static;
     top: 0;
-    background: var(--dark);
-    z-index: 999;
-}
-
-.logo {
-    position: absolute;
+    height: 50px;
     color: white;
-    text-align: center;
 }
 
-mat-drawer-container {
-    height: calc(100vh - 60px);
-    background-color: var(--main--bg-color);
+.spacer {
+    flex: 1 1 auto;
 }
 
-mat-drawer{
-    background: var(--dark);
+.top-links a {
+    display: inline-flex;
+    justify-content: center;
+    padding:  5px 0;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 6rem;
+    border-radius: 5px;
+    color: var(--secondary);
+}
+
+.top-links a:hover {
+    background-color: var(--secondary);
+    padding: 5px 20px;
+    color: var(--primary);
+}
+
+mat-drawer-container{
+    position: absolute;
     width: 100%;
-    display: block;
+    height: calc(100% - 50px);
 }
 
-.top app-navigation {
+mat-drawer {
+    background-color: var(--primary);
+    width: 50%;
     display: none;
 }
 
-mat-drawer app-navigation {
-    display: block;
+.side-links {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  5px 0;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    width: 7rem;
+    border-radius: 5px;
 }
 
-button {
-    display: block;
-    position: absolute;
-    left: 20px;
+.side-links a {
+    display: inline-flex;
+    padding:  5px 0;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    width: 7rem;
+    border-radius: 5px;
 }
 
+.side-links a:hover {
+    background-color: var(--secondary);
+    padding: 5px 20px;
+}
 
+.manubtn{
+    background-color: var(--secondary);
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 
 /* For Desktop View */
-@media screen and (min-width: 1024px) {
-    .top app-navigation {
+@media screen and (max-width: 684px) {
+    .top-links a {
+        display: none;
+    }
+
+    mat-drawer {
         display: block;
     }
 
-    .logo {
-        position: absolute;
-        left: 20px;
-        color: white;
-    }
-
-    mat-drawer app-navigation {
-        display: none;
-    }
-
-    mat-drawer{
-        background: var(--blendering);
-        width: 100%;
-        display: none;
-    }
-
-    button {
-        display: none;
-        position: absolute;
-        right: 1220px;
+    .manubtn{
+        display: block;
     }
 }
+
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {}
 
 /* For Tablet View */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}

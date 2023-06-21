@@ -1,0 +1,188 @@
+.foot {
+    background-color: var(--primary);
+}
+
+.foot_links {
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    padding: 4rem;
+    width: 100%;
+    gap: 20px;
+}
+
+.right {
+    width: 100%;
+}
+
+.links {
+    color: var(--lite);
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--lite);
+}
+
+.socials {
+    padding-left: 20px;
+}
+
+
+
+.socials a {
+    color: var(--primary);
+    background-color: var(--secondary);
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 40px;
+}
+
+.socials a:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 40px;
+}
+
+.address {
+    line-height: 1.8rem;
+}
+
+.links h3 {
+    color: var(--secondary);
+    padding-bottom: 1rem;
+}
+
+.links a {
+    padding-bottom: 0.5rem;
+}
+
+.links a:hover {
+    color: var(--secondary);
+}
+
+.sub h3 {
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.sub p {
+    padding-bottom: 0.5rem;
+}
+
+.sub input {
+    padding: 10px;
+    border: none;
+    color: var(--lite);
+    background-color: var(--liter);
+}
+
+.sub button {
+    padding: 10px;
+    border: none;
+    color: var(--lite);
+    background-color: var(--secondary);
+}
+
+.bottom {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+    color: var(--lite);
+}
+
+
+/* For Desktop View */
+@media screen and (max-width: 684px) {
+    .bottom {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0px;
+        color: var(--lite);
+    }
+
+    .socials a {
+        margin-top: 20px;
+    }
+
+    .socials {
+        padding: 0;
+    }
+
+    .foot_links {
+        display: grid;
+        grid-template-columns: calc(100%);
+        padding: 4rem;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+
+/* For Desktop View */
+@media screen and (max-width: 1024px) {
+    .foot_links {
+        display: grid;
+        grid-template-columns: calc(100% / 2) calc(100% / 2);
+        padding: 2rem;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .sub {
+        margin-top: 20px;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .foot_links {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 2rem;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}

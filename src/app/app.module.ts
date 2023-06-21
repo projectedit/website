@@ -7,34 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { LinksComponent } from './components/links/links.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { MainbarComponent } from './components/mainbar/mainbar.component';
+import { FootbarComponent } from './components/footbar/footbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { SolutionsComponent } from './pages/solutions/solutions.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ApplicationComponent } from './pages/services/application/application.component';
-import { DesignComponent } from './pages/services/design/design.component';
-import { ConsultationComponent } from './pages/services/consultation/consultation.component';
-import { CloudComponent } from './pages/services/cloud/cloud.component';
-import { ExploreComponent } from './pages/explore/explore.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    FooterComponent,
+    LinksComponent,
+    ToolbarComponent,
+    MainbarComponent,
+    FootbarComponent,
     HeaderComponent,
     HomeComponent,
-    ContactComponent,
-    SolutionsComponent,
-    AboutComponent,
-    ApplicationComponent,
-    DesignComponent,
-    ConsultationComponent,
-    CloudComponent,
-    ExploreComponent,
   ],
   imports: [
     BrowserModule,
