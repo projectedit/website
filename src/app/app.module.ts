@@ -7,23 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { LinksComponent } from './components/links/links.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { MainbarComponent } from './components/mainbar/mainbar.component';
 import { FootbarComponent } from './components/footbar/footbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
+import { SolutionsComponent } from './pages/solutions/solutions.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LinksComponent,
-    ToolbarComponent,
-    MainbarComponent,
     FootbarComponent,
     HeaderComponent,
     HomeComponent,
+    ContactComponent,
+    AboutComponent,
+    SolutionsComponent,
   ],
   imports: [
     BrowserModule,

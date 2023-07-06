@@ -1,11 +1,12 @@
 :root {
-    --main: rgb(24, 58, 29);
     --black: rgb(0,0,0);
     --white: rgb(255, 255, 255);
     --liter: rgb(225, 238, 221);
     --lite:rgb(254, 251, 233);
-    --primary: rgb(24, 58, 29);
-    --secondary: rgb(240, 160, 75);
+    --primary: #00235B;
+    --secondary: #FFDD83;
+    --primary_2: #98DFD6;
+    --secondary_2: #E21818;
     --default_font:Roboto, "Helvetica Neue", sans-serif;
 }
 

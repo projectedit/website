@@ -24,13 +24,12 @@ mat-toolbar {
     font-size: 1.2rem;
     width: 6rem;
     border-radius: 5px;
-    color: var(--secondary);
+    color: var(--lite);
 }
 
 .top-links a:hover {
     background-color: var(--secondary);
     padding: 5px 20px;
-    color: var(--primary);
 }
 
 mat-drawer-container{
