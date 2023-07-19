@@ -13,6 +13,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SolutionsComponent } from './pages/solutions/solutions.component';
+import { ApplicationComponent } from './pages/application/application.component';
+import { ConsultationComponent } from './pages/consultation/consultation.component';
+import { CloudComponent } from './pages/cloud/cloud.component';
+import { DesignComponent } from './pages/design/design.component';
 
 
 @NgModule({
@@ -24,6 +28,10 @@ import { SolutionsComponent } from './pages/solutions/solutions.component';
     ContactComponent,
     AboutComponent,
     SolutionsComponent,
+    ApplicationComponent,
+    ConsultationComponent,
+    CloudComponent,
+    DesignComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,257 @@
+/*HEADER*/
+header {
+    width: 100%;
+    background: linear-gradient(150deg, var(--primary) 30%, rgba(1, 1, 1, 0.01) 100%), url('../../../assets/header_img/futuristic-smart-city-with-5g-global-network-technology.jpg');
+    background-size: cover;
+    background-position: left;
+    align-items: center;
+    justify-content: left;
+    color: var(--white);
+    position: relative;
+    filter: brightness(100%);
+}
+
+em {
+    color: var(--secondary);
+}
+
+
+header article {
+    width: 100%;
+    height: calc(40vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+header article .title {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.intro{
+    padding: 2rem;
+}
+
+.intro h1{
+    margin-top: 50px;
+    line-height: 1.8rem;
+}
+
+.intro p{
+    max-width: 1000px;
+    margin-top: 20px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:20px;
+    max-width: 1200px;
+    margin: 20px 0px;
+}
+
+.category-card {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(65, 51, 183, 0.25);
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.category-card .tag {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.5em 0.75em;
+    line-height: 1;
+    border-radius: 6px;
+}
+
+.tag+* {
+    margin-top: 1rem;
+}
+
+.category-card h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 1.25;
+}
+
+.category-card h2+* {
+    margin-top: 1rem;
+}
+
+.category-card p {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.category-card p+* {
+    margin-top: 1.25rem;
+}
+
+.category-card button {
+    font: inherit;
+    line-height: 1;
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.category-card button:hover,
+.category-card button:focus {
+    background-color: var(--primary);
+    color: rgb(255, 255, 255);
+}
+
+.ibg p{
+    margin: 20px 0px;
+}
+
+.ibg {
+    background-color: var(--secondary_2);
+    padding: 4rem 20px;
+    color: white;
+    line-height: 1.5rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.git {
+    background-color: var(--primary);
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 100%;
+        gap: 20px;
+        max-width: 1000px;
+    }
+}
+
+
+
+@media (min-width: 0px) and (max-width: 1395px) {
+    header article .title {
+        font-weight: 900;
+        font-size: 4.5rem;
+    }
+
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1280px) {
+    header article .title {
+        font-weight: 900;
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1150px) {
+    header article .title {
+        font-weight: 900;
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1025px) {
+    header article .title {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 833px) {
+    header article .title {
+        font-weight: 900;
+        font-size: 2.7rem;
+    }
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    header article .title {
+        font-weight: 900;
+        font-size: 1.7rem;
+    }
+
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

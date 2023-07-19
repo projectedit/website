@@ -285,4 +285,32 @@ header article .title {
         flex-direction: column;
         margin-top: 1rem;
     }
+
+    .center_1 {
+        margin-bottom: 00px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    header article .title {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
 }

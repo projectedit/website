@@ -25,13 +25,13 @@
 }
 
 .big{
-    font-size:3.5em;
+    font-size:2.5em;
     padding-bottom: 10px;
 }
 
 .text {
     padding-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .medium{
@@ -118,9 +118,6 @@ header{
     width:100%;
     background:linear-gradient(130deg, rgb(0, 35, 91) 20%, rgba(0, 35, 91, 0.7) 50%, rgba(0, 35, 91, 0.2) 100%), url("../../../assets/img/header.jpg");
     background-size:cover;
-    background-position:left;
-    align-items:center;
-    justify-content:left;
     color:var(--white);
     position:relative;
     height: calc(100vh - 50px);
@@ -128,7 +125,8 @@ header{
 
 header article{
     width:100%;
-    padding:6rem;
+    height: 100%;
+    padding: 0 5rem;
     display: inline-flex;
     flex-direction: row;
 }
@@ -142,6 +140,7 @@ header article div:nth-child(1){
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 header article div:nth-child(2){
@@ -150,12 +149,14 @@ header article div:nth-child(2){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 header article div img{
-    width:300px;
+    justify-content: center;
     display: inline-flex;
     flex-direction: column;
+    width: 100%;
 }
 
 header article .title{
@@ -195,7 +196,7 @@ header section aside a{
 }
 
 header section aside p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 0;
     font-weight: 500;
 }
@@ -231,7 +232,7 @@ header section aside:nth-child(3){
     }
 
     header article div img{
-        width:200px;
+        width:400px;
         display: inline-flex;
         flex-direction: column;
     }
@@ -275,10 +276,9 @@ header section aside:nth-child(3){
   /* For Mobile Portrait View */
   @media screen and (max-device-width: 480px) and (orientation: portrait) {
     header article div img{
-        width:150px;
         display: inline-flex;
         flex-direction: column;
-        margin-bottom: 3rem;
+        width: 60%;
     }
 
     header section{

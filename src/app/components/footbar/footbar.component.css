@@ -27,6 +27,13 @@
     color: var(--lite);
 }
 
+.flex {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+
 .socials {
     padding-left: 20px;
 }
@@ -108,6 +115,10 @@
     color: var(--lite);
 }
 
+.logo h3 {
+    padding-left: 5px;
+}
+
 
 /* For Desktop View */
 @media screen and (max-width: 684px) {
@@ -166,7 +177,7 @@
     .foot_links {
         display: grid;
         grid-template-columns: auto;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
         gap: 20px;
     }

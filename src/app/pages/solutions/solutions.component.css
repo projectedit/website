@@ -40,7 +40,7 @@ header article .title {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .max {
@@ -58,7 +58,7 @@ header article .title {
 
 .movie-card {
     width: 100%;
-    height: 400px;
+    height: 450px;
     border-radius: 15px;
     position: relative;
     box-shadow: 0 0 50px var(--primary);
@@ -144,12 +144,14 @@ header article .title {
     top: 0;
     left: 0;
     object-fit: cover;
+    background-size: cover;
+    background-color: #000000;
 }
 
 
 .movie-card .content-card .shadow {
     width: 100%;
-    height: 170px;
+    height: 250px;
     display: block;
     position: absolute;
     bottom: 0;
@@ -232,23 +234,52 @@ header article .title {
 
 
 @media (min-width: 0px) and (max-width: 700px) {
-    body {
-        grid-template-columns: auto;
-        gap: 50px;
-        margin: 60px 0;
-    }
-
-    body:after {
-        top: -40px;
-        height: calc(100% + 590px);
-    }
-
     .row {
         display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
         width: 100%;
         gap: 60px 20px;
         max-width: 1000px;
+    }
+
+    header article .title {
+        font-weight: 900;
+        font-size: 4.5rem;
+    }
+
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .movie-card .content-card .shadow {
+        width: 100%;
+        height: 200px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: var(--secondary);
+        box-shadow: 0 0 10px 20px var(--secondary);
+        filter: blur(10px);
+    }
+
+    .center {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .center h1 {
+        font-size: 1.5rem;
     }
 
 }
@@ -416,10 +447,9 @@ header article .title {
 
 .card[active] {
     width: 100%;
-    height: 30rem;
-    flex: 0 0 calc(640px - 19rem);
+    height: 15rem;
+    flex: 0 0 calc(550px - 19rem);
     justify-content: center;
-    align-items: center;
     display: flex;
     padding: 10px;
 }
@@ -456,19 +486,21 @@ header article .title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 35px;
 }
 
 .card__name {
     margin: 0;
     color: var(--cards-text-color);
-    transform: translateY(.65rem);
     transition: all var(--animation-speed-normal) ease-in-out;
     font-size: 1.5rem;
+    padding-left: 35px;
+    transform: translate(-.5rem, 1rem);
 }
 
 .card[active] .card__name {
     transform: translateY(0);
+    padding-left: 0px;
 }
 
 .card__author {
@@ -500,33 +532,80 @@ header article .title {
 
     .card {
         width: var(--cards-closed-size);
-        height: 20rem;
+        height: 15rem;
         flex: 0 0 var(--cards-closed-size);
     }
 
     .card[active] {
         width: 100%;
-        height: 20rem;
+        height: 15rem;
         flex: 0 0 calc(640px - 19rem);
     }
 
     .card__name {
-        transform: rotate(-90deg) translate(-12rem, -2.25rem);
+        transform: rotate(-90deg) translate(-8rem, -3.1rem);
         width: 100%;
         display: inline-flex;
     }
+}
+
+.ibg p{
+    margin: 20px 0px;
 }
 
 .ibg {
     background-color: var(--secondary_2);
     padding: 4rem 20px;
     color: white;
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-top: 50px;
     text-align: center;
 }
 
 .git {
     background-color: var(--primary);
-    padding: 5px 10px;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    header article .title {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    header article {
+        width: 100%;
+        height: calc(40vh - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .movie-card .content-card .shadow {
+        width: 100%;
+        height: 230px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: var(--secondary);
+        box-shadow: 0 0 10px 20px var(--secondary);
+        filter: blur(10px);
+    }
+
+    .movie-card .content-card .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .card__name {
+        margin: 0;
+        color: var(--cards-text-color);
+        transition: all var(--animation-speed-normal) ease-in-out;
+        font-size: 1.5rem;
+        padding-left: 35px;
+    }
 }

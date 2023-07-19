@@ -11,6 +11,16 @@ mat-toolbar {
     color: white;
 }
 
+span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span h3 {
+    margin-left: 5px;
+}
+
 .spacer {
     flex: 1 1 auto;
 }
@@ -81,6 +91,8 @@ mat-drawer {
     justify-content: center;
     align-items: center;
     display: none;
+    z-index: 1;
+    background-color: var(--secondary_2);
 }
 
 /* For Desktop View */
@@ -96,6 +108,18 @@ mat-drawer {
     .manubtn{
         display: block;
     }
+
+    span{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+    
+    span h3 {
+        margin-left: 5px;
+    }
 }
 
 
@@ -106,7 +130,9 @@ mat-drawer {
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    
+}
 
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {}
