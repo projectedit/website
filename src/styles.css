@@ -1,76 +1,29 @@
-:root {
-    --white: #FFF;
-    --black: #000;
-    --lite: rgb(170, 170, 170);
-    --gray: #353535;
-    --dark: #100c08;
-    --primary: linear-gradient(145deg, #002347, #3399ff);
-    --primary_dark: #e42024;
-    --primary_lite: #3399ff;
-    --secondary: #3ab068;
-    --default_font: 'Mukta', sans-serif;
-    --title_font: 'Kanit', sans-serif;
+/* You can add global styles to this file, and also import other style files */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
 }
 
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+.bg-prim{
+    background-color: hsl(254, 100%, 10%);
 }
 
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Karla, sans-serif;
+body{
+    background-color: #130061;
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.space {
-    flex: 1 1 auto;
+    box-sizing: border-box;
 }

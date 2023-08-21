@@ -1,124 +1,285 @@
-.fullscreen-header {
-    position: absolute;
-    top: 0;
+.hero-container {
+    position: relative;
+    display: flex;
     width: 100%;
-    height: 100vh; /* Set the header's height to the viewport height */
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: center;
+    background-color: #130061;
+}
 
+.hero-content {
+    z-index: 999;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 2rem;
+}
+
+.hero-text-container {
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-text-heading {
+    color: #f7fafc;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+em{
+    color: blue;
+}
+
+.hero-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
-
-    /* Additional styles for the header, such as text color, padding, etc. */
+    background-color: blue;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: #fff9f9;
+    border-radius: 30px 0px 30px 0px;
+    border: 0.4rem solid blue;
 }
 
-.background-image {
+.hero-btn_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(254, 100%, 10%);
+    border: 0.4rem solid blue;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: #fff9f9;
+    border-radius: 30px 0px 30px 0px;
+    margin-left: 1rem;
+}
+
+.hero-btn_::after {
+    content: "";
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 7px;
+    background-color: #af98f1;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px 0px 30px 0px;
+    z-index: -1;
+    filter: brightness(1.2);
+}
+
+.hero-btn::after {
+    content: "";
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 7px;
+    background-color: #af98f1;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px 0px 30px 0px;
+    z-index: -1;
+    filter: brightness(1.2)
+}
+
+.hero-btn-link {
+    text-decoration: none;
+    color: #fff9f9;
+    font-weight: 700;
+}
+
+.hero-illustration-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-illustration-container img {
+    width: 60%;
+    animation: bounce 4s infinite alternate; /* Adjust animation duration as needed */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0%) translateY(15px);
+    }
+    50% {
+        transform: translateX(0%) translateY(-15px); /* Adjust vertical distance */
+    }
+}
+
+
+.waves-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.svg-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../assets/header/header.svg');
-    background-size: cover;
-    background-position: 50% 50%;
-    /* Place it behind other content */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 750"><path d="M0 0H1298.5C1298.5 0 1000 304.343 900.5 401C801 497.657 758.252 380.394 599.5 500.637C555.279 534.131 501.5 599.5 400.5 599.5C299.5 599.5 302.5 500.5 203 500.5C103.5 500.5 0 640 0 640V0Z" fill="hsl(254, 100%, 10%)"/></svg>#clipPath') center/cover no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, calc(100% - 10px) 100%, 0% 100%);
 }
 
-.content {
-    position: relative;
-    z-index: 1; /* Place content on top of the background */
-    /* Style your header content here */
-    width: 100%;
-    max-width: 1000px;
-}
-
-.content h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    -webkit-text-stroke: 0.1rem;
-    letter-spacing: 0.1rem;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-p{
-    color:  rgb(0, 255, 200);
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: .2rem;
-    -webkit-text-stroke: .1rem;
-    filter: brightness(1.4);
-}
-
-
-.exmbtn {
-    background-color:  rgb(0, 255, 200);
-    padding: 0.5rem 3rem;
-    margin-right: 2rem;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    border-radius: 2rem;
-    border: solid .3rem  rgb(0, 255, 200);
-    font-weight: 600;
-    font-size: 100%;
-    letter-spacing: 0.1rem;
-    filter: brightness(1.4);
-}
-
-.gitbtn {
-    padding: 0.5rem 3rem;
-    color:  rgb(0, 255, 200);
-    text-decoration: none;
-    border-radius: 2rem;
-    border: solid .3rem   rgb(0, 255, 200);
-    font-weight: 600;
-    font-size: 100%;
-    letter-spacing: 0.1rem;
-    filter: brightness(1.4);
-}
-
-.ht {
-    position: relative;
-    top: 0;
-    animation: slideFromTop 2s forwards;
-}
-
-.hbtn {
-    position: relative;
-    bottom: 0;
-    animation: slideFromBottom 2s forwards;
-}
-
-@keyframes slideFromTop {
-    from {
-        top: -1000px;
+/* For Desktop View */
+@media screen and (max-width: 1024px) {
+    .hero-content {
+        z-index: 999;
+        display: inline-flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1400px;
+        padding: 2rem;
     }
-    to {
-        left: 0;
+
+    .hero-text-heading {
+        color: #f7fafc;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .hero-text {
+        color: #f7fafc;
+        font-weight: 300;
+        font-size: 1.1rem;
     }
 }
 
-@keyframes slideFromBottom {
-    from {
-        bottom: -1000px;
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .hero-content {
+        z-index: 999;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1400px;
+        padding: 2rem;
     }
-    to {
-        right: 0;
+
+    .hero-content {
+        z-index: 999;
+        display: inline-flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1400px;
+        padding: 2rem;
+    }
+
+    .hero-text-heading {
+        color: #f7fafc;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        color: #f7fafc;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        color: #fff9f9;
+        border-radius: 30px 0px 30px 0px;
+        border: 0.4rem solid blue;
+    }
+    
+    .hero-btn_ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(254, 100%, 10%);
+        border: 0.4rem solid blue;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        color: #fff9f9;
+        border-radius: 30px 0px 30px 0px;
+        margin-left: 1rem;
+    }
+    
+    .hero-btn_::after {
+        content: "";
+        position: absolute;
+        margin-left: 7px;
+        margin-top: 7px;
+        background-color: #af98f1;
+        width: 150px;
+        height: 50px;
+        border-radius: 30px 0px 30px 0px;
+        z-index: -1;
+        filter: brightness(1.2);
+    }
+    
+    .hero-btn::after {
+        content: "";
+        position: absolute;
+        margin-left: 7px;
+        margin-top: 7px;
+        background-color: #af98f1;
+        width: 150px;
+        height: 50px;
+        border-radius: 30px 0px 30px 0px;
+        z-index: -1;
+        filter: brightness(1.2)
+    }
+
+    .hero-btn-link {
+        text-decoration: none;
+        color: #fff9f9;
+        font-weight: 600;
+        font-size: .9rem;
     }
 }
 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+    
+}
 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
 
+}
 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+}
 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+}
 
-
-
-
-
-
-
-
-
-
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {}
