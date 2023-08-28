@@ -1,11 +1,16 @@
 .bg-blue{
-  background-color: #130061;
+  background-color: hsl(214, 63%, 9%);
   color: white;
 }
 
 .gt{
-  background: linear-gradient(180deg, #130061 60%, white 100%);
+  background: linear-gradient(180deg, hsl(214, 63%, 9%)60%, white 100%);
   padding: 5px 0;
+}
+
+
+.llb{
+  border-left: solid 0.2rem orange;
 }
 
 .cc {
@@ -14,40 +19,13 @@
 }
 
 .about-section{
-  background: url(https://fadzrinmadu.github.io/hosted-assets/responsive-about-us-section-using-html/pic.jpg) no-repeat left;
+  background: url("../../../assets/home/computer-3174729_1280.jpg") no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 0;
   margin: 50px 0;
 }
-
-.lk-1{
-  background-image: url('../../../assets/home/blockchain-7124810_1280.png');
-  background-size: 100%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  display: flex;
-  width: 73%;
-  height: 45%;
-  margin-top: -6rem;
-  margin-left: -5rem;
-  position: absolute;
-  opacity: 0.09;
-}
-
-/* .lk-2{
-  background-image: url('../../../assets/home/gears-5193383_1280-removebg-preview.png');
-  background-position: 50% 50%;
-  background-size: 200px;
-  background-repeat: no-repeat;
-  display: flex;
-  width: 17%;
-  height: 100%;
-  z-index: ;
-  position: absolute;
-  opacity: 0.9;
-} */
 
 .md{
   margin: 50px 0;
@@ -115,7 +93,7 @@
   color: white;
   text-decoration: none;
   padding: 0.5rem 3rem;
-  background-color: blue;
+  background-color: orange;
   width: 250px;
   text-align: center;
   border-radius: 0.5rem;
@@ -128,6 +106,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 5rem 0;
 }
 
 .y-us-section {
@@ -138,10 +117,10 @@
 }
 
 .y-us-title-border {
-    background: blue none repeat scroll 0 0;
+    background: orange none repeat scroll 0 0;
     border-radius: 2px;
     display: inline-block;
-    height: 2px;
+    height: 3px;
     position: relative;
     width: 100px;
 }
@@ -164,23 +143,9 @@
 
 
 
-.icon {
-    color : blue;
-    padding:0px;
-    font-size:40px;
-    border: 1px solid blue;
-    border-radius: 100px;
-    color: blue;
-    font-size: 28px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    width: 70px;
-}
-
 
 div.diamond-container {
-  padding: 10rem;
+  padding: 6rem;
   margin-top: 2rem;
 }
 div.diamond-container div.line {
@@ -254,7 +219,6 @@ div.diamond-container div.line.normal div.diamond {
   margin-left: 8px;
   margin-right: 8px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   box-sizing: border-box;
   justify-content: center;
@@ -285,51 +249,25 @@ div.diamond-container div.line.normal div.diamond:after {
   border-top-width: 35px;
 }
 div.diamond-container div.line.primary div.diamond {
-  background-color: #3094B4;
+  background-color: orange;
   color: #FFFFFF;
 }
 div.diamond-container div.line.primary div.diamond:before {
-  border-bottom-color: #3094B4;
+  border-bottom-color: orange;
 }
 div.diamond-container div.line.primary div.diamond:after {
-  border-top-color: #3094B4;
+  border-top-color: orange;
 }
-div.diamond-container div.line.primary div.diamond div.diamond.inner {
-  background-color: #FFFFFF;
-  color: #3094B4;
-  margin-left: 0;
-  margin-right: 0;
-}
-div.diamond-container div.line.primary div.diamond div.diamond.inner:before {
-  border-bottom-color: #FFFFFF;
-  bottom: calc(100% - 1px);
-  border-bottom-width: 36px;
-}
-div.diamond-container div.line.primary div.diamond div.diamond.inner:after {
-  border-top-color: #FFFFFF;
-  top: calc(100% - 1px);
-  border-top-width: 36px;
-}
-
-
-div.diamond-container div.line.secondary div.diamond div.diamond.inner {
-  background-color: #FFFFFF;
-}
-div.diamond-container div.line.secondary div.diamond div.diamond.inner:before {
-  border-bottom-color: #FFFFFF;
-}
-div.diamond-container div.line.secondary div.diamond div.diamond.inner:after {
-  border-top-color: #FFFFFF;
-}
-
 
 
 /* For Desktop View */
-@media screen and (min-width: 1024px) {
-	.gfg-div {
-		background-color: #63c971;
-		color: #fff;
-	}
+@media screen and (max-width: 654px) {
+	div.diamond-container div.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* For Tablet View */

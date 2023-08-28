@@ -4,7 +4,7 @@
 
 
 .navbar-toggler {
-    background-color: blue;
+    background-color: orange;
     border-radius: .3rem;
 }
 
@@ -24,10 +24,12 @@
 }
 
 .btn_1x {
-    background-color:blue;
-    border-radius: .3rem;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 1rem 0.1rem ;
+    background-color: orange;
+    border-radius: .2rem;
+}
+
+.btn_1x .nav-link{
+    color: hsl(214, 63%, 9%);
 }
 
 a,
@@ -64,9 +66,9 @@ a:active {
 .single_footer h4::after {
     content: "";
     display: block;
-    height: 2px;
-    width: 40px;
-    background: #fff;
+    height: 3px;
+    width: 50px;
+    background: orange;
     margin-top: 20px;
 }
 
@@ -92,7 +94,7 @@ a:active {
 }
 
 .single_footer ul li a:hover {
-    color: #ff3666;
+    color: orange;
 }
 
 .single_footer_address {}
@@ -147,9 +149,9 @@ a:active {
 }
 
 .subscribe__btn {
-    background-color: transparent;
-    border-radius: 0 25px 25px 0;
-    color: #01c7e9;
+    background-color: orange;
+    border-radius: 0 5px 5px 0;
+    color: hsl(214, 63%, 9%);
     cursor: pointer;
     display: block;
     font-size: 20px;
@@ -168,10 +170,6 @@ a:active {
     .subscribe__btn {
         right: 0px;
     }
-}
-
-.subscribe__btn:hover i {
-    color: #ff3666;
 }
 
 button {
@@ -206,13 +204,13 @@ button {
     transition: all 0.3s ease 0s;
     margin: 0px 5px;
     font-size: 18px;
-    color: #fff;
+    color: orange;
     border-radius: 30px;
     width: 50px;
     height: 50px;
     line-height: 50px;
     display: block;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid orange;
 }
 
 @media only screen and (max-width:768px) {
@@ -231,9 +229,9 @@ button {
 }
 
 .social_profile ul li a:hover {
-    background: #ff3666;
-    border: 1px solid #ff3666;
-    color: #fff;
+    background: orange;
+    border: 1px solid orange;
+    color: hsl(214, 63%, 9%);
     border: 0px;
 }
 
@@ -248,10 +246,31 @@ button {
 }
 
 .copyright a {
-    color: #01c7e9;
+    color: orange;
     transition: all 0.2s ease 0s;
 }
 
 .copyright a:hover {
     color: #ff3666;
+}
+
+
+.animation-container {
+    overflow: hidden;
+}
+
+.animated-text {
+    position: relative;
+    right: -100%;
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
 }
