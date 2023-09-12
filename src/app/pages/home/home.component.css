@@ -1,15 +1,15 @@
-.bg-blue{
+.bg-blue {
   background-color: hsl(214, 63%, 9%);
   color: white;
 }
 
-.gt{
+.gt {
   background: linear-gradient(180deg, hsl(214, 63%, 9%)60%, white 100%);
   padding: 5px 0;
 }
 
 
-.llb{
+.llb {
   border-left: solid 0.2rem orange;
 }
 
@@ -18,7 +18,7 @@
   color: white;
 }
 
-.about-section{
+.about-section {
   background: url("../../../assets/home/computer-3174729_1280.jpg") no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
@@ -27,69 +27,57 @@
   margin: 50px 0;
 }
 
-.md{
+h1 {
+  font-weight: 600;
+}
+
+.md {
   margin: 50px 0;
 }
 
-.inner-container{
+.inner-container {
   width: 75%;
   float: right;
   background-color: #fdfdfd;
   padding: 100px;
 }
 
-.inner-container h1{
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.y-us-title h1{
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.y-us-title_t h1{
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: 900;
-  color: white;
-}
-
-.y-us-content h4{
-  margin-bottom: 10px;
-  font-weight: 900;
+.btn{
+  background-color: orange;
+  border: none;
+  font-weight: 500;
 }
 
 
-
-@media screen and (max-width:1200px){
-  .inner-container{
-      padding: 80px;
+@media screen and (max-width:1200px) {
+  .inner-container {
+    padding: 80px;
   }
 }
 
-@media screen and (max-width:1000px){
-  .about-section{
-      background-size: 100%;
-      padding: 50px 40px;
+@media screen and (max-width:1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 50px 40px;
   }
-  .inner-container{
-      width: 100%;
+
+  .inner-container {
+    width: 100%;
   }
 }
 
-@media screen and (max-width:600px){
-  .about-section{
-      padding: 0;
+@media screen and (max-width:600px) {
+  .about-section {
+    padding: 0;
+    margin: 20px 0;
   }
-  .inner-container{
-      padding: 1rem;
+
+  .inner-container {
+    padding: 1rem;
   }
 }
 
-.git_btn{
+.git_btn {
   color: white;
   text-decoration: none;
   padding: 0.5rem 3rem;
@@ -100,7 +88,7 @@
   margin: 1rem 0;
 }
 
-.container_{
+.container_ {
   display: inline-flex;
   width: 100%;
   justify-content: center;
@@ -109,121 +97,37 @@
   padding: 5rem 0;
 }
 
-.y-us-section {
-    padding: 82px 0 82px;
-}
-.y-us-head {
-    margin: 0 0 50px;
-}
-
 .y-us-title-border {
-    background: orange none repeat scroll 0 0;
-    border-radius: 2px;
-    display: inline-block;
-    height: 3px;
-    position: relative;
-    width: 100px;
-}
-.service-3 .service-box {
-    margin: 2rem 0 ;
-}
-.service-3 .service-box .iconset {
-    float: left;
-    text-align: center;
-    width: 10%;
-}
-.service-3 .service-box .iconset i {
-    color: #000;
-    font-size: 44px;
-}
-.service-3 .service-box .y-us-content {
-    float: left;
-    width: 90%;
-}
-
-
-
-
-div.diamond-container {
-  padding: 6rem;
-  margin-top: 2rem;
-}
-div.diamond-container div.line {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-div.diamond-container div.line div.diamond {
+  background: orange none repeat scroll 0 0;
+  border-radius: 2px;
+  display: inline-block;
+  height: 3px;
   position: relative;
+  width: 100px;
+}
+
+.service-3 .service-box {
+  margin: 2rem 0;
+}
+
+.service-3 .service-box .iconset {
+  float: left;
   text-align: center;
-  vertical-align: middle;
+  width: 10%;
 }
-div.diamond-container div.line div.diamond.inner {
-  z-index: 1;
-  transform: scale(.96,.96);
+
+.service-3 .service-box .iconset i {
+  color: #000;
+  font-size: 44px;
 }
-div.diamond-container div.line.small + .normal {
-  margin-top: 34px;
+
+.service-3 .service-box .y-us-content {
+  float: left;
+  width: 90%;
 }
-div.diamond-container div.line.small > div.diamond {
-  margin-left: 35px;
-  margin-right: 35px;
-}
-div.diamond-container div.line.small div.diamond {
-  min-width: 90px;
-  width: 90px;
-  max-width: 90px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 17px;
-  font-weight: 800;
-}
-div.diamond-container div.line.small div.diamond:before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-bottom-style: solid;
-  border-bottom-width: 20px;
-}
-div.diamond-container div.line.small div.diamond:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-top-style: solid;
-  border-top-width: 20px;
-}
-div.diamond-container div.line.normal + .small {
-  margin-top: 34px;
-}
-div.diamond-container div.line.normal + .normal {
-  margin-top: 46px;
-}
-div.diamond-container div.line.normal div.diamond {
-  min-width: 144px;
-  width: 144px;
-  max-width: 144px;
-  height: 80px;
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 8px;
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: center;
-  padding: 0 8px;
-}
+
+
+
 div.diamond-container div.line.normal div.diamond:before {
   content: "";
   position: absolute;
@@ -236,6 +140,7 @@ div.diamond-container div.line.normal div.diamond:before {
   border-bottom-style: solid;
   border-bottom-width: 35px;
 }
+
 div.diamond-container div.line.normal div.diamond:after {
   content: "";
   position: absolute;
@@ -248,13 +153,16 @@ div.diamond-container div.line.normal div.diamond:after {
   border-top-style: solid;
   border-top-width: 35px;
 }
+
 div.diamond-container div.line.primary div.diamond {
   background-color: orange;
   color: #FFFFFF;
 }
+
 div.diamond-container div.line.primary div.diamond:before {
   border-bottom-color: orange;
 }
+
 div.diamond-container div.line.primary div.diamond:after {
   border-top-color: orange;
 }
@@ -262,7 +170,7 @@ div.diamond-container div.line.primary div.diamond:after {
 
 /* For Desktop View */
 @media screen and (max-width: 654px) {
-	div.diamond-container div.line {
+  div.diamond-container div.line {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,80 +179,72 @@ div.diamond-container div.line.primary div.diamond:after {
 }
 
 /* For Tablet View */
-@media screen and (min-device-width: 768px)
-	and (max-device-width: 1024px) {
-	.gfg-div {
-		width: 400px;
-		height: 400px;
-		background-color: orange;
-		color: black;
-	}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    color: black;
+  }
 }
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-	and (orientation: portrait) {
-	.gfg-div {
-		width: 200px;
-		height: 200px;
-		background-color: red;
-		color: #fff;
-	}
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .gfg-div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: #fff;
+  }
 }
 
 /* For Mobile Landscape View */
-@media screen and (max-device-width: 640px)
-	and (orientation: landscape) {
-	.gfg-div {
-		width: 400px;
-		height: 200px;
-		background-color: cyan;
-		color: black;
-	}
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: cyan;
+    color: black;
+  }
 }
 
 /* For Mobile Phones Portrait or Landscape View */
-@media screen
-	and (max-device-width: 640px) {
-	.gfg-div {
-		width: 400px;
-		height: 200px;
-		background-color: chartreuse;
-		color: black;
-	}
+@media screen and (max-device-width: 640px) {
+  .gfg-div {
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    color: black;
+  }
 }
 
 /* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px)
-	and (-webkit-min-device-pixel-ratio: 2) {
-	.gfg-div {
-		width: 400px;
-		height: 400px;
-		background-color: brown;
-		color: black;
-	}
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    color: black;
+  }
 }
 
 /* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px)
-	and (device-width: 320px)
-	and (-webkit-min-device-pixel-ratio: 2) {
-	.gfg-div {
-		width: 400px;
-		height: 400px;
-		background-color: cornflowerblue;
-		color: black;
-	}
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    color: black;
+  }
 }
 
 /* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px)
-	and (min-device-width: 375px)
-	and (-webkit-min-device-pixel-ratio: 3) {
-	.gfg-div {
-		width: 400px;
-		height: 400px;
-		background-color: darkgoldenrod;
-		color: black;
-	}
-};
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: darkgoldenrod;
+    color: black;
+  }
+}
+

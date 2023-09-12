@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../assets/header/technology-6701504_1280.jpg');
+    background-image: url('../../../assets/home/kenny-eliason-dGCUivMSQc0-unsplash.jpg');
     background-size: cover;
     background-position: center;
     /* Adjust the opacity as needed */
@@ -72,37 +72,11 @@
     letter-spacing: 0.1rem;
 }
 
-h1 {
+.hero-text-heading {
     font-size: 4rem;
     font-weight: 900;
 }
 
-.txt{
-    font-size: 0.9rem;
-    font-weight: 400;
-    padding: 0.5rem;
-    line-height: 1.2rem;
-}
-
-.animation-container {
-    overflow: hidden;
-}
-
-.animated-text {
-    position: relative;
-    left: -100%;
-    animation: slideIn 2s forwards;
-}
-
-@keyframes slideIn {
-    0% {
-        left: -100%;
-    }
-
-    100% {
-        left: 0;
-    }
-}
 
 em {
     color: orange;
@@ -194,6 +168,7 @@ em {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .tabs label {
@@ -203,12 +178,15 @@ em {
     order: 1;
     display: block;
     padding: 1rem 2rem;
-    margin-right: 0.2rem;
+    margin-right: 1rem;
     cursor: pointer;
-    background: #90CAF9;
+    background: hsla(213, 64%, 9%, 0.1);
     font-weight: bold;
     -webkit-transition: background ease 0.2s;
     transition: background ease 0.2s;
+    border-radius: 1rem 2px;
+    color: black;
+
 }
 
 .tabs .tab {
@@ -223,7 +201,7 @@ em {
     width: 100%;
     display: none;
     padding: 1rem;
-    background: #fafafa;
+    background: hsl(214, 63%, 9%);
 }
 
 .tabs input[type="radio"] {
@@ -231,8 +209,14 @@ em {
     opacity: 0;
 }
 
+.btn {
+    background-color: orange;
+    border: none;
+}
+
 .tabs input[type="radio"]:checked+label {
-    background: #fafafa;
+    background: hsl(214, 63%, 9%);
+    color: white;
 }
 
 .tabs input[type="radio"]:checked+label+.tab {
@@ -256,59 +240,57 @@ em {
     }
 }
 
-
-
-section {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.accordian {
-    max-width: 650px;
-    padding: 0.2rem;
-    border-radius: 12px;
-}
-
-.accordian:first-child {
-    background: #fdf7f0;
-    border-left: 4px solid #fac38b;
-}
-
-.accordian:nth-child(2) {
-    background: #f1f0fe;
-    border-left: 4px solid #9090eb;
-}
-
-.accordian:nth-child(3) {
-    background: #fff0f3;
-    border-left: 4px solid #ef95ac;
-}
-
-.accordian:nth-child(4) {
-    background: #eef9ff;
-    border-left: 4px solid #98d1f3;
-}
-
-.accordian_head {
-    background-color: transparent;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    cursor: pointer;
+.y-us-title-border {
+    background: orange none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 100px;
 }
 
 
-.accordian_toggler.active {
-    rotate: 133deg;
+
+.box {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(243, 243, 243, 0.7);
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+
 }
 
-.accordian_title {
-    background-color: transparent;
-    font-size: 1rem;
-    font-weight: 500;
+.background-image {
+    background: radial-gradient(circle at 50px 50px, orange 10%, white 30%, white 75%, hsl(213, 64%, 9%) 80%);
+}
+
+
+.glass-card {
+
+	padding: 1.25rem;
+	/* 	background: rgba(22, 37, 41, 0.7); */
+	background: radial-gradient(
+		circle at bottom right,
+		rgba(127, 102, 73, 0.4) 0,
+		rgba(34, 62, 76, 0.3) 100%
+	);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	border-right: 1px solid rgba(152, 152, 152, 0.18);
+	border-left: 1px solid rgba(43, 43, 43, 0.3);
+	border-bottom: 1px solid rgba(43, 43, 43, 0.3);
+	border-radius: 0.75rem;
+    mix-blend-mode:difference
+}
+
+@keyframes blobAnimation {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
 }

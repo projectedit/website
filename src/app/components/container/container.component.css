@@ -274,3 +274,10 @@ button {
         right: 0;
     }
 }
+
+em{
+    color: orange;
+    font-weight: 600;
+    font-size: larger;
+    font-style: normal;
+}
